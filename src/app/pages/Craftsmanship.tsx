@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link } from 'react-router';
-import finishingImage from 'figma:asset/e3d847519aacc2781dd5930d61ae7692026785b7.png';
+import finishingImage from const productImage = "/product.png";
 
 export default function Craftsmanship() {
   const { t } = useLanguage();
