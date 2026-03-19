@@ -3,10 +3,9 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { Link } from "react-router";
 import { Check, Sparkles } from "lucide-react";
 import { useRef } from "react";
-const heroImage = "/src/assets/64d9d69084ccbaccca238daea8b2d6e8449f429f.png";
-const productImage = "/src/assets/7fb76e0da57a9d1909541ba9dd96ec00f61a201d.png";
-const transformationImage = "/src/assets/e3d847519aacc2781dd5930d61ae7692026785b7.png";
-
+const heroImage = "/src/assets/images/64d9d69084ccbaccca238daea8b2d6e8449f429f.png";
+const productImage = "/src/assets/images/7fb76e0da57a9d1909541ba9dd96ec00f61a201d.png";
+const transformationImage = "/src/assets/images/e3d847519aacc2781dd5930d61ae7692026785b7.png";
 const craftImage1 = "https://images.unsplash.com/photo-1700831213936-44bb92582be4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kd29ya2luZyUyMGNyYWZ0c21hbnNoaXAlMjBoYW5kc3xlbnwxfHx8fDE3NzM4OTM5NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const craftImage2 = "https://images.unsplash.com/photo-1759523081055-05bcf5d10787?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29vZCUyMGNhcnZpbmclMjB3b3Jrc2hvcHxlbnwxfHx8fDE3NzM4OTM5NTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const craftImage3 = "https://images.unsplash.com/photo-1756362401802-2c099b34c177?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kY3JhZnRlZCUyMHdvb2RlbiUyMGZ1cm5pdHVyZSUyMGRldGFpbHxlbnwxfHx8fDE3NzM4OTM5NTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
