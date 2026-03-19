@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link } from 'react-router';
-const finishingImage = "/transformation.png";
+const finishingImage = "/Public/transformation.png";
 
 export default function Craftsmanship() {
   const { t } = useLanguage();
