@@ -1,27 +1,28 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Link } from 'react-router';
-const finishingImage = "https://i.imgur.com/xeKkWyh.png";
+const finishingImage = "https://i.imgur.com/xeKkWyh.jpeg";
 
 export default function Craftsmanship() {
   const { t } = useLanguage();
 
   const craftSteps = [
     {
-      title: t.craftsmanshipPage.woodSelection,
-      description: t.craftsmanshipPage.woodSelectionText,
-      image: 'https://images.unsplash.com/photo-1685022515804-af2e8b3b75e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kd29ya2luZyUyMGFydGlzYW4lMjB0b29sc3xlbnwxfHx8fDE3NzI0MDQwMzV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    },
+  title: t.craftsmanshipPage.woodSelection,
+  description: t.craftsmanshipPage.woodSelectionText,
+  image: 'https://i.imgur.com/Frbnmck.jpeg',
+},
+{
+  title: t.craftsmanshipPage.handSanding,
+  description: t.craftsmanshipPage.handSandingText,
+  image: 'https://i.imgur.com/GBrOME8.jpeg',
+}, 
     {
-      title: t.craftsmanshipPage.handSanding,
-      description: t.craftsmanshipPage.handSandingText,
-      image: 'https://images.unsplash.com/photo-1626977990625-18e01e4cfe7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kJTIwc2FuZGluZyUyMGNyYWZ0c21hbnNoaXAlMjBkZXRhaWx8ZW58MXx8fHwxNzcyNDA0MDM2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    },
-    {
-      title: t.craftsmanshipPage.finishing,
-      description: t.craftsmanshipPage.finishingText,
-      image: finishingImage,
-    },
+  title: t.craftsmanshipPage.finishing,
+  description: t.craftsmanshipPage.finishingText,
+  image: finishingImage,
+},
+
   ];
 
   return (
