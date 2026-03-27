@@ -168,7 +168,7 @@ export default function Contact() {
                 href="https://wa.me/5492215089495"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#25D366] text-white rounded-sm hover:bg-[#20BA5A] transition-all shadow-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#3d2817] text-white rounded-sm hover:bg-[#2c1f11] transition-all shadow-lg"
                 style={{ fontFamily: 'var(--font-sans)' }}
               >
                 <MessageCircle className="w-5 h-5" />
@@ -178,7 +178,7 @@ export default function Contact() {
                 href="https://www.instagram.com/tiendagardel/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#E1306C] text-white rounded-sm hover:bg-[#C2255C] transition-all shadow-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#d4b896] text-[#3d2817] rounded-sm hover:bg-[#c4a886] transition-all shadow-lg"
                 style={{ fontFamily: 'var(--font-sans)' }}
               >
                 <Instagram className="w-5 h-5" />

@@ -30,24 +30,20 @@ export default function Shipping() {
 
   const faqs = [
     {
-      q: '¿Cuánto cuesta el envío?',
-      a: 'El envío está incluido en el precio del tablero. No hay costos adicionales.',
+      q: t.shippingPage.faqQ1,
+      a: t.shippingPage.faqA1,
     },
     {
-      q: '¿Envían a mi ciudad?',
-      a: 'Sí, realizamos envíos a toda Argentina sin excepción.',
+      q: t.shippingPage.faqQ2,
+      a: t.shippingPage.faqA2,
     },
     {
-      q: '¿Cómo se embala el tablero?',
-      a: 'Utilizamos embalaje multicapa con materiales sostenibles que protegen completamente el tablero durante el transporte.',
+      q: t.shippingPage.faqQ3,
+      a: t.shippingPage.faqA3,
     },
     {
-      q: '¿Qué pasa si el tablero llega dañado?',
-      a: 'Si tu tablero llega con algún daño, lo reemplazamos inmediatamente sin costo alguno.',
-    },
-    {
-      q: '¿Puedo devolver el tablero?',
-      a: 'Sí, ofrecemos devolución sin preguntas dentro de los primeros 30 días de la compra.',
+      q: t.shippingPage.faqQ4,
+      a: t.shippingPage.faqA4,
     },
   ];
 
@@ -71,7 +67,7 @@ export default function Shipping() {
               className="text-xl text-[#6b5d52] leading-relaxed"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
-              Enviamos tu tablero artesanal con el máximo cuidado a cualquier rincón de Argentina.
+              {t.shippingPage.subtitle}
             </p>
           </motion.div>
         </div>
@@ -142,7 +138,7 @@ export default function Shipping() {
               className="text-lg text-[#6b5d52]"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
-              Y muchas ciudades más en todo el país
+              {t.shippingPage.citiesText}
             </p>
           </motion.div>
         </div>
@@ -208,13 +204,13 @@ export default function Shipping() {
               className="text-3xl md:text-4xl mb-6"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              ¿Listo para recibir tu tablero artesanal?
+              {t.shippingPage.finalCTATitle}
             </h2>
             <button
               className="px-10 py-4 bg-[#d4b896] text-[#3d2817] rounded-sm hover:bg-[#c4a886] transition-all shadow-lg"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
-              {t.hero.primaryCTA}
+              {t.shippingPage.finalCTAButton}
             </button>
           </motion.div>
         </div>

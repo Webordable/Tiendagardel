@@ -70,6 +70,7 @@ interface Translations {
   };
   shippingPage: {
     title: string;
+    subtitle: string;
     shipping: string;
     shippingText: string;
     timeframe: string;
@@ -79,6 +80,19 @@ interface Translations {
     guarantee: string;
     guaranteeText: string;
     faqTitle: string;
+    faqQ1: string;
+    faqA1: string;
+    faqQ2: string;
+    faqA2: string;
+    faqQ3: string;
+    faqA3: string;
+    faqQ4: string;
+    faqA4: string;
+    faqQ5: string;
+    faqA5: string;
+    citiesText: string;
+    finalCTATitle: string;
+    finalCTAButton: string;
   };
   contactPage: {
     title: string;
@@ -114,7 +128,7 @@ const translations: Record<Language, Translations> = {
     hero: {
       headline: "El ajedrez, tallado con alma.",
       subheadline:
-        "Tablero de ajedrez artesanal hecho a mano en Argentina. Una pieza única para quienes valoran la estrategia y la belleza.",
+        "Tableros de ajedrez tallados a mano en La Plata, Argentina.",
       primaryCTA: "Comprar ahora",
       secondaryCTA: "Descubrir la historia",
       trustLine:
@@ -122,12 +136,12 @@ const translations: Record<Language, Translations> = {
     },
     transformation: {
       before: "Antes",
-      beforeText: "Tableros industriales, sin carácter.",
+      beforeText: "Un tablero de plástico o importado.",
       after: "Después",
       afterText:
-        "Una pieza que transmite presencia en cualquier espacio.",
+        "Una pieza de madera maciza que dura toda la vida.",
       microcopy:
-        "Cada tablero es único. La madera nunca repite su historia.",
+        "Cada tablero es diferente. La madera lo hace único.",
     },
     product: {
       feature1: "Madera maciza seleccionada",
@@ -141,12 +155,12 @@ const translations: Record<Language, Translations> = {
     craftsmanshipPreview: {
       headline: "El arte detrás de cada movimiento.",
       narrative:
-        "Desde el corte de la madera hasta el último pulido, cada tablero pasa por manos expertas.",
+        "Así se hace cada tablero — paso a paso, sin apuros.",
       cta: "Ver proceso completo",
     },
     socialProof: {
-      quote1: "Una obra de arte funcional.",
-      quote2: "Calidad que se siente al tocarla.",
+      quote1: "Lo compré de regalo y quedaron encantados.",
+      quote2: "Llegó perfecto, bien embalado y más lindo de lo que esperaba.",
       customer1: "Cliente de Buenos Aires",
       customer2: "Cliente de La Plata",
       locations: "Envíos a todo el país.",
@@ -161,35 +175,49 @@ const translations: Record<Language, Translations> = {
     craftsmanshipPage: {
       title: "La Artesanía",
       intro:
-        "Cada tablero de Tienda Gardel es el resultado de un proceso artesanal meticuloso que honra la tradición de la carpintería argentina.",
+        "Así se hace cada tablero. Sin atajos.",
       woodSelection: "Selección de Madera",
       woodSelectionText:
-        "Seleccionamos cuidadosamente madera maciza local, respetando la veta natural y las características únicas de cada pieza.",
+        "Elegimos madera maciza local a mano. Cada pieza tiene una veta diferente — eso es lo que hace único a cada tablero.",
       handSanding: "Lijado a Mano",
       handSandingText:
-        "Cada superficie es trabajada a mano con paciencia, creando una textura suave y perfecta al tacto.",
+        "Cada superficie se lija a mano hasta que se siente bien. Sin máquinas.",
       finishing: "Acabado Natural",
       finishingText:
-        "Aplicamos aceites naturales que protegen la madera mientras resaltan su belleza inherente.",
+        "Terminamos con aceites naturales únicamente. Nada artificial.",
       philosophy: "Filosofía del Oficio",
       philosophyText:
-        "No buscamos la producción en masa. Cada tablero lleva tiempo, dedicación y el conocimiento de generaciones de artesanos.",
+        "No hacemos producción en masa. Cada tablero lleva su tiempo.",
     },
     shippingPage: {
       title: "Envíos y Garantía",
+      subtitle: "Enviamos tu tablero artesanal con el máximo cuidado a cualquier rincón de Argentina.",
       shipping: "Envíos a toda Argentina",
       shippingText:
-        "Realizamos envíos a todo el país con embalaje especializado para proteger tu tablero durante el transporte.",
+        "Realizamos envíos a todo el país con embalaje especializado para proteger tu tablero.",
       timeframe: "Tiempo de Entrega",
       timeframeText:
         "Buenos Aires, La Plata, City Bell: 3-5 días hábiles. Resto del país: 7-10 días hábiles.",
-      packaging: "Embalaje Artesanal",
+      packaging: "Embalaje Cuidadoso",
       packagingText:
-        "Cada tablero se envuelve con protección multicapa y materiales sostenibles que garantizan su llegada en perfectas condiciones.",
+        "Lo embalamos bien para que llegue en perfectas condiciones.",
       guarantee: "Garantía de Satisfacción",
       guaranteeText:
-        "Si no estás completamente satisfecho con tu tablero, ofrecemos devolución sin preguntas dentro de los primeros 30 días.",
+        "¿No estás contento con tu tablero? Lo arreglamos dentro de los 30 días.",
       faqTitle: "Preguntas Frecuentes",
+      faqQ1: "¿Está incluido el envío?",
+      faqA1: "Sí, el envío está incluido en el precio. Sin costos extra.",
+      faqQ2: "¿Envían a mi ciudad?",
+      faqA2: "Sí, enviamos a donde sea.",
+      faqQ3: "¿Cómo se embala el tablero?",
+      faqA3: "Lo embalamos bien para que llegue como tiene que llegar.",
+      faqQ4: "¿Qué pasa si el tablero llega dañado?",
+      faqA4: "Lo arreglamos nosotros, sin vueltas.",
+      faqQ5: "¿Puedo devolver el tablero?",
+      faqA5: "Sí, dentro de los 30 días de la compra.",
+      citiesText: "Y muchas ciudades más en todo el país.",
+      finalCTATitle: "¿Listo para recibir tu tablero artesanal?",
+      finalCTAButton: "Comprar ahora",
     },
     contactPage: {
       title: "Contacto",
@@ -288,6 +316,7 @@ const translations: Record<Language, Translations> = {
     },
     shippingPage: {
       title: "Envíos y Garantía",
+      subtitle: "Información detallada sobre nuestros envíos",
       shipping: "Envíos a toda Argentina",
       shippingText:
         "Realizamos envíos a todo el país con embalaje especializado para proteger tu tablero durante el transporte.",
@@ -301,6 +330,19 @@ const translations: Record<Language, Translations> = {
       guaranteeText:
         "Si no estás completamente satisfecho con tu tablero, ofrecemos devolución sin preguntas dentro de los primeros 30 días.",
       faqTitle: "Preguntas Frecuentes",
+      faqQ1: "¿Cuánto tiempo tarda el envío?",
+      faqA1: "El tiempo de entrega varía según la ubicación. Buenos Aires, La Plata y City Bell: 3-5 días hábiles. Resto del país: 7-10 días hábiles.",
+      faqQ2: "¿Cómo se envían los tableros?",
+      faqA2: "Cada tablero se envía con embalaje especializado para protegerlo durante el transporte.",
+      faqQ3: "¿Qué garantía ofrecen?",
+      faqA3: "Ofrecemos una garantía de satisfacción. Si no estás satisfecho con tu tablero, puedes devolverlo sin preguntas dentro de los primeros 30 días.",
+      faqQ4: "¿Puedo seguir el estado de mi pedido?",
+      faqA4: "Sí, puedes seguir el estado de tu pedido a través de nuestro sistema de seguimiento de pedidos.",
+      faqQ5: "¿Qué ciudades tienen envío rápido?",
+      faqA5: "Buenos Aires, La Plata y City Bell tienen envío rápido de 3-5 días hábiles.",
+      citiesText: "Envíos a todo el país.",
+      finalCTATitle: "¿Listo para jugar?",
+      finalCTAButton: "Comprar ahora",
     },
     contactPage: {
       title: "Contacto",
@@ -336,7 +378,7 @@ const translations: Record<Language, Translations> = {
     hero: {
       headline: "Chess, carved with soul.",
       subheadline:
-        "Handcrafted artisanal chess board made in Argentina. A unique piece for those who value strategy and beauty.",
+        "Handcrafted chess boards made in La Plata, Argentina.",
       primaryCTA: "Buy now",
       secondaryCTA: "Discover the story",
       trustLine:
@@ -344,11 +386,11 @@ const translations: Record<Language, Translations> = {
     },
     transformation: {
       before: "Before",
-      beforeText: "Industrial boards, without character.",
+      beforeText: "A plastic or mass-produced board.",
       after: "After",
-      afterText: "A piece that conveys presence in any space.",
+      afterText: "A solid wood piece that lasts a lifetime.",
       microcopy:
-        "Each board is unique. Wood never repeats its story.",
+        "Every board is different. The wood makes it unique.",
     },
     product: {
       feature1: "Selected solid wood",
@@ -362,12 +404,12 @@ const translations: Record<Language, Translations> = {
     craftsmanshipPreview: {
       headline: "The art behind every move.",
       narrative:
-        "From cutting the wood to the final polish, each board passes through expert hands.",
+        "How each board is made — step by step, without rushing.",
       cta: "See full process",
     },
     socialProof: {
-      quote1: "A functional work of art.",
-      quote2: "Quality you can feel.",
+      quote1: "I bought it as a gift and they absolutely loved it.",
+      quote2: "Arrived perfectly packed and even more beautiful than expected.",
       customer1: "John Doe",
       customer2: "Jane Smith",
       locations: "Nationwide shipping.",
@@ -382,35 +424,49 @@ const translations: Record<Language, Translations> = {
     craftsmanshipPage: {
       title: "The Craft",
       intro:
-        "Each Tienda Gardel board is the result of a meticulous artisanal process that honors the tradition of Argentine carpentry.",
+        "This is how each board is made. No shortcuts.",
       woodSelection: "Wood Selection",
       woodSelectionText:
-        "We carefully select local solid wood, respecting the natural grain and unique characteristics of each piece.",
+        "We pick local solid wood by hand. Each piece has a different grain — that's what makes every board one of a kind.",
       handSanding: "Hand Sanding",
       handSandingText:
-        "Each surface is worked by hand with patience, creating a smooth and perfect texture to the touch.",
+        "Every surface is sanded by hand until it feels right. No machines.",
       finishing: "Natural Finishing",
       finishingText:
-        "We apply natural oils that protect the wood while enhancing its inherent beauty.",
+        "We finish with natural oils only. Nothing artificial.",
       philosophy: "Craft Philosophy",
       philosophyText:
-        "We do not seek mass production. Each board takes time, dedication, and the knowledge of generations of artisans.",
+        "We don't do mass production. Each board takes the time it takes.",
     },
     shippingPage: {
       title: "Shipping & Guarantee",
-      shipping: "Shipping throughout Argentina",
+      subtitle: "We ship your board carefully to anywhere in Argentina.",
+      shipping: "Shipping Across Argentina",
       shippingText:
-        "We ship nationwide with specialized packaging to protect your board during transport.",
+        "We ship nationwide with specialized packaging to protect your board.",
       timeframe: "Delivery Time",
       timeframeText:
         "Buenos Aires, La Plata, City Bell: 3-5 business days. Rest of the country: 7-10 business days.",
-      packaging: "Artisanal Packaging",
+      packaging: "Careful Packaging",
       packagingText:
-        "Each board is wrapped with multi-layer protection and sustainable materials that guarantee its arrival in perfect condition.",
+        "We wrap it carefully so it arrives in perfect condition.",
       guarantee: "Satisfaction Guarantee",
       guaranteeText:
-        "If you are not completely satisfied with your board, we offer no-questions-asked returns within the first 30 days.",
+        "Not happy with your board? We'll make it right within 30 days.",
       faqTitle: "Frequently Asked Questions",
+      faqQ1: "Is shipping included?",
+      faqA1: "Yes, shipping is included in the price. No extra costs.",
+      faqQ2: "Do you ship to my city?",
+      faqA2: "Yes, we ship anywhere in Argentina.",
+      faqQ3: "How is the board packaged?",
+      faqA3: "We wrap it carefully so it arrives in perfect condition.",
+      faqQ4: "What if the board arrives damaged?",
+      faqA4: "We'll sort it out. No questions asked.",
+      faqQ5: "Can I return the board?",
+      faqA5: "Yes, within 30 days of purchase.",
+      citiesText: "And many more cities across Argentina.",
+      finalCTATitle: "Ready to receive your board?",
+      finalCTAButton: "Buy now",
     },
     contactPage: {
       title: "Contact",
